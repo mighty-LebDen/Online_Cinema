@@ -1,2 +1,6 @@
 
-m	java:S106"+Replace this use of System.out by a logger.(²έ›8€®–―χ1J$93db811a-00ca-458d-895f-8dcc8f88e111
+o
+java:S3599",Use another way to initialize this instance.(ν‹­π8ªολ―χ1J$abfe3487-f8ff-4cb2-8dec-4769f7eb61bb
+
+java:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(ν‹­π8«ολ―χ1J$31a2f117-97c1-481e-abb1-8a47a68abe73
+m	java:S106"+Replace this use of System.out by a logger.(²έ›8­ολ―χ1J$67c1d86e-2352-4dc9-ba84-58d47d832980
