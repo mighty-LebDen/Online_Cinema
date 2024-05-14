@@ -1,14 +1,17 @@
 package com.company.lebedev;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Viewer {
   private String nickname;
   private int age;
-  private int countOfFilms;
+  private List<Cinema> userFilms;
   
-  public Viewer(String nickname, int age, int countOfFilms) {
+  public Viewer(String nickname, int age, List<Cinema> userFilms) {
     this.nickname = (nickname == null || nickname.isEmpty()) ? "default" : nickname;
     this.age = Math.max(0, age);
-    this.countOfFilms = Math.max(0, countOfFilms);
+    this.userFilms = (userFilms != null && !(userFilms.isEmpty())) ? userFilms : new ArrayList<>();
   }
   
   public String getNickname() {
@@ -20,8 +23,8 @@ public class Viewer {
   }
   
   
-  public int getCountOfFilms() {
-    return countOfFilms;
+  public List<Cinema> getUserFilms() {
+    return this.userFilms;
   }
   
   public void setNickname(String nickname) {
@@ -32,13 +35,13 @@ public class Viewer {
   
   public void setAge(int age) {
     if(age > 0) {
-    
-    } this.age = age;
-   
+      this.age = age;
+    }
   }
   
-  public void setCountOfFilms(int countOfFilms) {
-    this.countOfFilms = countOfFilms;
+  public void setUserFilms(List<Cinema> userFilms) {
+    if(userFilms != null && !(userFilms.isEmpty())) {
+      this.userFilms = userFilms;
+    }
   }
-
 }
