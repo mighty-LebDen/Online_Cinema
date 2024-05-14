@@ -7,11 +7,14 @@ public class Viewer {
   private String nickname;
   private int age;
   private List<Cinema> userFilms;
+  private int countOfFilms;
   
+
   public Viewer(String nickname, int age, List<Cinema> userFilms) {
     this.nickname = (nickname == null || nickname.isEmpty()) ? "default" : nickname;
     this.age = Math.max(0, age);
     this.userFilms = (userFilms != null && !(userFilms.isEmpty())) ? userFilms : new ArrayList<>();
+    this.countOfFilms = this.userFilms.size();
   }
   
   public String getNickname() {
@@ -44,4 +47,13 @@ public class Viewer {
       this.userFilms = userFilms;
     }
   }
+  
+  public int getCountOfFilms() {
+    return countOfFilms;
+  }
+  
+  public void setCountOfFilms(int countOfFilms) {
+    this.countOfFilms = countOfFilms;
+  }
+  
 }
