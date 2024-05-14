@@ -10,3 +10,5 @@ S
 -src/com/company/lebedev/ViewerStatistics.java,b\9\b94209f6952272d1ed92b314875ff734cb895b59
 M
 src/CinemaApplicationRun.java,5\f\5f8ec1c91b3838053409c9adb4f52eb2d7e76715
+S
+#src/com/company/lebedev/Cinema.java,8\2\82067621a57b3db94792a8892fb632f7d7c5ede7
